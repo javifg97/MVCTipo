@@ -88,10 +88,6 @@ public class VistaImp extends JFrame implements Vista {
 		btnCaraga.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
 				controlador.EstablecerAtrib();
-				txtfusuario.setText(modelo.getUsuario());
-				txtfContraseña.setText(modelo.getContraseña());
-				txtfURL.setText(modelo.getURL());
-				txtfNotas.setText(modelo.getNotas());
 
 			}
 		});
@@ -101,6 +97,13 @@ public class VistaImp extends JFrame implements Vista {
 			}
 		});
 
+	}
+
+	public void EstablecerTxtfCarga(String usuario, String contraseña, String url, String notas) {
+		txtfusuario.setText(usuario);
+		txtfContraseña.setText(contraseña);
+		txtfURL.setText(url);
+		txtfNotas.setText(notas);
 	}
 
 	public String getStrTxtfusuario() {

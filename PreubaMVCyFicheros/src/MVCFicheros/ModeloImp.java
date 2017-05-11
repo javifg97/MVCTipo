@@ -112,5 +112,6 @@ public class ModeloImp implements Modelo {
 				}
 			}
 		}
+		vista.EstablecerTxtfCarga(Usuario, Contraseña, URL, Notas);
 	}
 }
